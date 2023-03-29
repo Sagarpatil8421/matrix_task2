@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:poppins ;
+  font-size: 25px;
+}
+
+.navbar {
+  background: #212529;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .menu{
+  height: 55px;
+  width: 45px;
+  margin-left: 30px;
+  display: none;
+}
+.navbar button {
+  font-weight: 700;
+  font-size: 26px;
+  padding: 5px 30px;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid #71C7EC;
+  background: transparent;
+  margin: 0 13px;
+}
+.navbar .connect{
+  background: #71C7EC;
+  padding: 5px 30px;
+}
+.btn{
+  display: flex;
+  margin-right:20px ;
+}
+/******************
+side-bar start 
+******************/
+.main{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.side-bar{
+  width: 250px;
+  height: calc(90vh - 80px);
+  background-color:  #212529;
+  color: #B4B4B4;
+  padding: 50px 25px;
+}
+.side-bar h3{
+  font-size: 22px;
+}
+.side-bar a img{
+  height: 25px;
+  width: 25px;
+}
+.side-bar a{
+  display: block;
+  text-decoration: none;
+  color:#B4B4B4 ;
+  line-height: 25px;
+  margin: 20px 0;
+}
+/******************
+side-bar ends 
+******************/
+/******************
+Main container starts 
+*******************/
+.container{
+  width: calc(98vw - 250px);
+  height: calc(98vh - 80px);
+  background: #1E1E1E;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
+}
+
+.container .Waddress{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 30px;
+  border: 1px solid #71C7EC;
+  border-radius: 10px;
+}
+.container .Waddress img{
+  height: 27px;
+  width: 28px;
+}
+.box-container{
+  padding: 30px 20px;
+  border: 1px solid #71C7EC;
+  border-radius: 10px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box{
+  width: 18vw;
+  height: 150px;
+  text-align: center;
+  margin: 10px 10px;
+}
+.box p{
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.box h2{
+  color: #71C7EC;
+}
+/******************
+Main container ends 
+******************/
+
+@media screen and (max-width:950px) {
+  .side-bar{
+    display: none;
+  }
+  .navbar .menu{
+    display: block;
+  }
+  .container{
+    width: 98vw;
+  }
+  .box{
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .navbar{
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container{
+    width: 98vw;
+    height: 99vh;
+  }
+  .container .Waddress {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+  }
+  .box{
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .navbar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+}
